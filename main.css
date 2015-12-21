@@ -1,5 +1,7 @@
+
 .container{
 	border: solid;
+	
 }
 .navbar{
 	border-width: 2px;
@@ -8,3 +10,5 @@
 .navbar-brand{
 	letter-spacing: 1px;
 }
+
+
