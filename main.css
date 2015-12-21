@@ -1,0 +1,10 @@
+.container{
+	border: solid;
+}
+.navbar{
+	border-width: 2px;
+		 margin: 9px;
+}
+.navbar-brand{
+	letter-spacing: 1px;
+}
