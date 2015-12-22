@@ -1,14 +1,26 @@
 
-.container{
-	border: solid;
-	
-}
 .navbar{
-	border-width: 2px;
-		 margin: 9px;
+	border-width: 0px;
+	margin: 9px;
 }
-.navbar-brand{
+.navbar-brand  {
 	letter-spacing: 1px;
 }
-
-
+.profilepic{
+	max-width: 100%;
+	  display:block;
+    margin:auto;
+}
+.col-md-5{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+.home {
+	min-height: 500px; 
+	border: 2px solid;
+}
+@media screen and (min-width: 768px) {
+    .content{
+		margin-top: 100px;
+	}
+}

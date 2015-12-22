@@ -10,8 +10,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript">
   	$(document).ready(function(){
-  		
-    	$("#home1,#home2").click(function(){
+  		 
+    	$("#home2, #home1").click(function(){
        		$(".project, .resume, .contact").hide();
        		$('.nav.navbar-nav > li').removeClass('active');
         	$(".home").show();
@@ -32,14 +32,14 @@
        		$(".project, .resume, .home").hide();
         	$(".contact").show();
     	});
-    	$('.nav.navbar-nav > li').on('click', function(e) {
-	    $('.nav.navbar-nav > li').removeClass('active');
-	    $(this).addClass('active');
-		}); 
+		$('.nav.navbar-nav > li').hover(function(){
+        $('.nav.navbar-nav > li').removeClass('active');
+        $(this).addClass('active');}, function(){
+        	$(this).removeClass('active');
+   		});
+  	
 	});
-	if (screen.width < 768){
-		$(".project, .resume, .home, ").hide();
-	}
+	
   </script>
 </head>
 <body>
@@ -56,7 +56,7 @@
          <span class = "icon-bar"></span>
       </button>
 		
-      <a class = "navbar-brand" href = "#">Ashish Surana</a>
+      <a class = "navbar-brand" href = "#" id="home1">Ashish Surana</a>
    </div>
    
    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
@@ -75,9 +75,16 @@
 
 <div class="container">
 	<div class="home">
-		<p>inside home</p>
-		<div class="">
-			
+		<div class="row">
+			<div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content " >
+				<img src="./assets/pic.jpg" class="profilepic">
+			</div>	
+
+			<div class="col-md-5 col-sm-8  col-xs-12 content" x>
+				<p>I'm  a 3rd year Computer Science Engineering Student from Arya College of Enggineering & IT. The thirst of Exploring things and curiosity well defines me. I'm a traveling and Photography addict.
+
+				Being a Dreamer, and geek student who loves learning new technologies I love to think on innovative creative ideas and their deployment. I'm a RedHat Certified Engineer, RedHat Certified System Administrator, Firefox Student Ambassador, Open Source Enthusiast and believes in open learning. During the college time, I came in contact with the open source communities like Mozilla Community Rajasthan, OpenMoz, etc. I'm an active member of these communities and delivered several tech talks and Workshops.</p>
+			</div>	
 		</div>
 	</div>
 	
