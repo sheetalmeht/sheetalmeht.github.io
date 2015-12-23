@@ -20,12 +20,26 @@
 }
 .project{
 	border: 2px solid;	
+	padding: 0px 7.5% 7.5% 0px;
 }
 @media screen and (min-width: 768px) {
     .content{
 		margin-top: 100px;
 	}
 }
-.project-pic{
-	width: 100%;
+@media screen and (max-width: 768px) {
+    .project-pic{
+    	background-color: lightgreen;
+    	margin-left: 15%;
+    }
+    .project{
+	text-align: center;
+	}
+}
+@media screen and (max-width: 992px) {
+    
+    .project{
+	border: 2px solid;	
+	padding: 0px 12.5% 7.5% 0px;
+	}
 }
