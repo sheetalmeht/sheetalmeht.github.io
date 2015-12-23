@@ -17,10 +17,15 @@
 }
 .home {
 	min-height: 500px; 
-	border: 2px solid;
+}
+.project{
+	border: 2px solid;	
 }
 @media screen and (min-width: 768px) {
     .content{
 		margin-top: 100px;
 	}
+}
+.project-pic{
+	width: 100%;
 }

@@ -5,9 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
   <link rel="stylesheet" type="text/css" href="./main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
   <script type="text/javascript">
   	$(document).ready(function(){
   		 
@@ -17,7 +20,7 @@
         	$(".home").show();
         	$("#home2").addClass('active');
     	});
-    	$(".project, .resume, .contact").hide();
+    	$(".home, .resume, .contact").hide();
     	$("#project").click(function(){
         	$(".home, .resume, .contact").hide();
         	$(".project").show();
@@ -37,9 +40,7 @@
         $(this).addClass('active');}, function(){
         	$(this).removeClass('active');
    		});
-  	
 	});
-	
   </script>
 </head>
 <body>
@@ -71,13 +72,11 @@
 </nav>
 
 
-
-
 <div class="container">
 	<div class="home">
 		<div class="row">
 			<div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content " >
-				<img src="./assets/pic.jpg" class="profilepic">
+				<img src="./assets/pic.jpg" class="profilepic img-thumbnail">
 			</div>	
 
 			<div class="col-md-5 col-sm-8  col-xs-12 content" x>
@@ -87,21 +86,18 @@
 			</div>	
 		</div>
 	</div>
-	
+
+
 	<div class="project">
-		<p>inside project</p>
+		<h3>Projects</h3>
+		<hr>
 	</div>
-	
 	<div class="resume">
 		<p>inside resume</p>
 	</div>
-	
 	<div class="contact">
 		<p>inside contact</p>
 	</div>
-
 </div>
-
-
 </body>
 </html>
