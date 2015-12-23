@@ -8,8 +8,9 @@
 }
 .profilepic{
 	max-width: 100%;
-	  display:block;
+	display:block;
     margin:auto;
+    padding: 10px;
 }
 .col-md-5{
 	margin-bottom: 8px;
@@ -22,6 +23,10 @@
 	border: 2px solid;	
 	padding: 0px 7.5% 7.5% 0px;
 }
+.project-pic{
+    border: 1px solid;
+    margin-bottom: 5px;
+    }
 @media screen and (min-width: 768px) {
     .content{
 		margin-top: 100px;
@@ -29,7 +34,6 @@
 }
 @media screen and (max-width: 768px) {
     .project-pic{
-    	background-color: lightgreen;
     	margin-left: 15%;
     }
     .project{
@@ -37,9 +41,14 @@
 	}
 }
 @media screen and (max-width: 992px) {
-    
     .project{
+
 	border: 2px solid;	
 	padding: 0px 12.5% 7.5% 0px;
 	}
+}
+.more{
+	bottom: 3px;
+	right: 15px;
+	text-align: right;
 }
