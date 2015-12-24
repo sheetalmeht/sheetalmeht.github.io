@@ -47,8 +47,13 @@
 	padding: 0px 12.5% 7.5% 0px;
 	}
 }
+@media screen and (max-width: 1200px) {
+    .drug-box {
+    	bottom: 0px;
+    }
+
+}
 .more{
 	bottom: 3px;
-	right: 15px;
 	text-align: right;
 }
