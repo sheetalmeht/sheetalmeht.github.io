@@ -5,36 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.1.1/css/zocial.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" type="text/css" href="./main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
   <script type="text/javascript">
   	$(document).ready(function(){
-  		 
     	$("#home2, #home1").click(function(){
-       		$(".project, .resume, .contact").hide();
+       		$(".project, .resume, .contact, .skills").hide();
        		$('.nav.navbar-nav > li').removeClass('active');
         	$(".home").show();
         	$("#home2").addClass('active');
     	});
-    	$(".home, .resume, .contact, #temp").hide();
+    	$(".home, .project, .resume, .contact, #temp").hide();
     	$("#project").click(function(){
-        	$(".home, .resume, .contact").hide();
+        	$(".home, .resume, .contact, .skills").hide();
         	$(".project").show();
+    	});
+    	$("#skills").click(function(){
+        	$(".home, .project, .resume, .contact").hide();
+        	$(".skills").show();
     	});
 
     	$("#resume").click(function(){
-       		$(".project, .contact, .home").hide();
+       		$(".project, .contact, .home, .skills").hide();
         	$(".resume").show();
         	$(".resume").addClass('active');
     	});
     	$("#contact").click(function(){
-       		$(".project, .resume, .home").hide();
+       		$(".project, .resume, .home, .skills").hide();
         	$(".contact").show();
     	});
 		$('.nav.navbar-nav > li').hover(function(){
@@ -42,11 +43,7 @@
         $(this).addClass('active');}, function(){
         	$(this).removeClass('active');
    		});
-/*
-   		$("#flip").hover(function(){
-        	$("#panel").hide(1000);}, function(){
-        		$("#panel").show()
-    	});*/
+
 	});
   </script>
 </head>
@@ -71,6 +68,7 @@
 	
       <ul class = "nav navbar-nav">
         <li class="active"><a href="#" id="home2">About</a></li>
+        <li><a href="#" id="skills">Skills</a></li>
         <li><a href="#" id="project">Projects</a></li>
         <li><a href="#" id="resume">Resume</a></li>
         <li><a href="#" id="contact">Contact</a></li>
@@ -81,9 +79,9 @@
 
 <div class="container">
 	<div class="home">
-		<div class="row">
+		<div class="row	">
 			<div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content " >
-				<img src="./assets/pic.jpg" class="profilepic img-thumbnail">
+				<img src="./assets/pic.png" class="profilepic img-thumbnail">
 			</div>	
 
 			<div class="col-md-5 col-sm-8  col-xs-12 content" x>
@@ -93,86 +91,239 @@
 			</div>	
 		</div>
 	</div>
-
+	<div class="skills">
+		<h3>Skills</h3>
+		<hr>
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+			<h3>Programming Languages</h3>
+			<hr>
+			<img src="./assets/c.png" class="col-lg-2 img-circle" title="C">
+			<img src="./assets/cpp.png" class="col-lg-2 img-circle">
+			<img src="./assets/java1.png" class="col-lg-2 img-circle">
+			<img src="./assets/html.png" class="col-lg-2 img-circle">
+			<img src="./assets/css.png" class="col-lg-2 img-circle">
+			<img src="./assets/js.png" class="col-lg-2 img-circle">
+			<img src="./assets/jq.png" class="col-lg-2 img-circle">
+		</div>
+		
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+			<h3>Other</h3>
+			<hr>
+			<img src="./assets/git.png" class="col-lg-2 img-circle"  >
+			<img src="./assets/android.png" class="col-lg-2 img-circle">
+			<img src="./assets/mysql.png" class="col-lg-2 img-circle">
+			<img src="./assets/bootstrap.png" class="col-lg-2 img-circle" title="Bootstrap">
+			<img src="./assets/java1.png" class="col-lg-2 img-circle">
+			<img src="./assets/androids.png" class="col-lg-2 img-circle">
+			<img src="./assets/eclipse.png" class="col-lg-2 img-circle">
+		</div>
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+			<h3>Certifications</h3>
+			<hr>
+			<img src="./assets/rhce.png" class="col-lg-2 ">
+			<img src="./assets/cad.png" class="col-lg-2">
+		</div>
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+			<h3>Operating Systems</h3>
+			<hr>
+			<img src="./assets/ubuntu.png" class="col-lg-2 ">
+			<img src="./assets/redhat.png" class="col-lg-2">
+			<img src="./assets/windows.png" class="col-lg-2">
+		</div>
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+			<h4>Above all, I'm a Quick Learner, Dedicated, Hardworking student.</h4>
+		</div>
+	</div>
 
 	<div class="project">
-		<h3 style="text-align: left;">Projects</h3>
+		<h3 class="align-left">Projects</h3>
 		<hr>
 		<div class="row">
-			<div class="col-lg-3  col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2    project-pic" >
-				<h4> Medicine Management</h4>
-				<img src="./assets/med.png" class="img-responsive img-thumbnail" id="panel"  >
-				<div>
+
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+				<img src="./assets/java.png" style="float:right;">
+				<div class="col-lg-3 col-md-4 col-sm-3 " >
+					<img src="./assets/med.png" class="img-responsive img-thumbnail">
+				</div>
+				
+					<h3>Medicine Stock Management <small> september 2014</small></h3>
+					<hr>
+					<p>A desktop based application having simple GUI, that maintains the stock of Shedule H1 drugs with the help of conventional paper Billing System. It has a unique feature of getting near expiry medicines. </p>
+					<h5><b>Technology Used</b> : JAVA, MySql</h5>
+				<div class="box">
 					<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-github fa-stack-1x"></i>
-					</a>
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+			  				<i class="fa fa-github fa-stack-1x"></i>
+						</a>
 					</span>
 					<span class="fa-stack fa-lg" >
 						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-		  					<i class="fa fa-picture-o fa-stack-1x"></i>
+		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>	
-					
 				</div>
-				<div>
-					<p id="temp">ljgvgkhbjnkmvgbhnjmkvgbhnj</p>
-				</div>			
+			
 			</div>
-			<div class="col-lg-3  col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2  project-pic">
-				<h4>Quick Mini-Statement</h4>
-				<img src="./assets/mini.png" class="img-responsive img-thumbnail">
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-github fa-stack-1x"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-picture-o fa-stack-1x"></i>
-					</a>
-				</span>	
 
-						
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+				<img src="./assets/android.svg" style="float:right;">
+				<div class="col-lg-3 col-md-4 col-sm-3 " >
+					<img src="./assets/mini.png" class="img-responsive img-thumbnail">
+				</div>
+				
+					<h3>Quick Mini-Statement <small> september 2014</small></h3>
+					<hr>
+					<p>A desktop based application having simple GUI, that maintains the stock of Shedule H1 drugs with the help of conventional paper Billing System. It has a unique feature of getting near expiry medicines. </p>
+					<h5><b>Technology Used</b> : JAVA, Sqlite, Android API 23</h5>
+				<div class="box">
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+			  				<i class="fa fa-github fa-stack-1x"></i>
+						</a>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
+						</a>
+					</span>	
+				</div>
 			</div>
-			<div class="col-lg-3   col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 project-pic">
-				<h4>Payroll Management</h4>
-				<img src="./assets/payroll.png" class="img-responsive img-thumbnail">
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-github fa-stack-1x"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-picture-o fa-stack-1x"></i>
-					</a>
-				</span>	
-							
-			</div>
-			<div class="col-lg-3   col-md-3 c col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 project-pic">
-				<h4>www.epilepsycare.in </h4>
 
-				<img src="./assets/epilepsy.png" class="img-responsive img-thumbnail">
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-github fa-stack-1x"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-lg" >
-					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-	  					<i class="fa fa-picture-o fa-stack-1x"></i>
-					</a>
-				</span>		
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+				<img src="./assets/java.png" style="float:right;">
+				<div class="col-lg-3 col-md-4 col-sm-3 " >
+					<img src="./assets/payroll.png" class="img-responsive img-thumbnail">
+				</div>
+				
+					<h3>Payroll Management <small> september 2014</small></h3>
+					<hr>
+					<p>A desktop based application having simple GUI, that maintains the stock of Shedule H1 drugs with the help of conventional paper Billing System. It has a unique feature of getting near expiry medicines. </p>
+					<h5><b>Technology Used</b> : JAVA, MySql</h5>
+				<div class="box">
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+			  				<i class="fa fa-github fa-stack-1x"></i>
+						</a>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
+						</a>
+					</span>	
+				</div>
+			</div>
+
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+				<img src="./assets/web.png" style="float:right;z-index=-1;">
+				<div class="col-lg-3 col-md-4 col-sm-3 " >
+					<img src="./assets/epilepsy.png" class="img-responsive img-thumbnail project-icon">
+				</div>
+				
+					<h3>epilepsycare.in<small> september 2014</small></h3>
+					<hr>
+					<p>A desktop based application having simple GUI, that maintains the stock of Shedule H1 drugs with the help of conventional paper Billing System. It has a unique feature of getting near expiry medicines. </p>
+					<h5><b>Technology Used</b> : HTML, CSS, JavaScript</h5>
+				<div class="box">
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+			  				<i class="fa fa-github fa-stack-1x"></i>
+						</a>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
+						</a>
+					</span>	
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="resume">
-		<p>inside resume</p>
-	</div>
 	<div class="contact">
-		<p>inside contact</p>
+		<h3 class="align-left">Contact</h3>
+		<hr>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+				<span class="fa-stack fa-lg">
+		  				<a href="https://twitter.com/ashishsurana1" target="_blank">
+		  					
+	  					<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-twitter fa-stack-1x"></i>
+		  				</a>
+						</span>
+
+						<span class="fa-stack fa-lg" >
+						<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+							
+	  					<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-facebook fa-stack-1x"></i>
+						</a>
+						</span>
+
+						<span class="fa-stack fa-lg" >
+	  					<a href="http://stackoverflow.com/users/3950481/ashish-surana" target="_blank">
+	  						<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-stack-overflow fa-stack-1x"></i>
+	  					</a>
+						</span>
+
+		  				<span class="fa-stack fa-lg">
+		  				<a href="https://in.linkedin.com/in/ashishsurana1" target="_blank">
+		  					
+	  					<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-linkedin fa-stack-1x"></i>
+
+		  				</a>
+						</span>
+
+						<span class="fa-stack fa-lg">
+	  						<a href="https://github.com/ashishsurana" target="_blank">
+	  							<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-github fa-stack-1x"></i>
+	  						</a>
+						</span>
+
+						<span class="fa-stack fa-lg">
+	  					<a href="https://plus.google.com/u/0/+ashishsurana1" target="_blank">
+	  						<i class="fa fa-square-o fa-stack-2x" ></i>
+	  					<i class="fa fa-google fa-stack-1x"></i>
+	  					</a>
+						</span>
+					
+						<span class="fa-stack fa-lg">
+	  					<a href="https://instagram.com/ashishsurana12345/" target="_blank">
+	  						<i class="fa fa-square-o fa-stack-2x"></i>
+	  					<i class="fa fa-instagram fa-stack-1x"></i>
+	  					</a>
+						</span>
+			</div>
+		</div>
 	</div>
+
+	<div class="resume">
+		<h3 class="align-left">Resume</h3>
+		<hr>
+		<div class="row">
+
+			<div class="col-lg-12  col-md-12  col-sm-12  well " style="text-align:center;">
+				 <!-- <object width="100%" style="height=auto;"  type="application/pdf" data="assets/resume.pdf" id="pdf_content"></object> -->
+				<div class="hidden-xs">
+					<embed src="assets/resume.pdf" width="100%" height="1100px">
+				</div>
+				<!-- <div style="margin :auto;text-align: center;" class="visible-xs">	 -->
+					<span class="fa fa-lg icons col-lg-1	">
+	  					<a href="./assets/resume.pdf" target="_blank">
+	  						<i class="fa fa-file-pdf-o fa-3x"></i>
+	  					</a>
+					</span>
+					<span class="fa fa-lg icons col-lg-1">
+	  					<a href="./assets/resume.pdf" download="ashishsurana_resume.pdf">
+	  						<i class="fa fa-download fa-3x"></i>
+	  					</a>
+					</span>
+				<!-- </div> -->
+			</div>
+	</div>
+
 </div>
 </body>
 </html>

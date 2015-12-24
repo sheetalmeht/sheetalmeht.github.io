@@ -19,41 +19,34 @@
 .home {
 	min-height: 500px; 
 }
-.project{
-	border: 2px solid;	
-	padding: 0px 7.5% 7.5% 0px;
+.project .skills{
+	
+	padding: 15px;
 }
-.project-pic{
-    border: 1px solid;
-    margin-bottom: 5px;
-    }
+
 @media screen and (min-width: 768px) {
     .content{
 		margin-top: 100px;
 	}
 }
 @media screen and (max-width: 768px) {
-    .project-pic{
-    	margin-left: 15%;
+    .project-icon{
+    	text-align: center;
     }
     .project{
+	padding: 25px;
 	text-align: center;
 	}
+	.home{
+		padding: 0px 5px 0px 5px; 
+	}
+
 }
 @media screen and (max-width: 992px) {
     .project{
-
-	border: 2px solid;	
-	padding: 0px 12.5% 7.5% 0px;
+	
 	}
 }
-@media screen and (max-width: 1200px) {
-    .drug-box {
-    	bottom: 0px;
-    }
-
-}
-.more{
-	bottom: 3px;
-	text-align: right;
+.align-left{
+	text-align: left;
 }
