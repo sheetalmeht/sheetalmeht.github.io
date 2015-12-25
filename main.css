@@ -1,10 +1,14 @@
 
 .navbar{
-	border-width: 0px;
 	margin: 9px;
 }
-.navbar-brand  {
+
+h3 ,h4,  li, .navbar {
+	letter-spacing: 2px;
+}
+p{
 	letter-spacing: 1px;
+	font-size: 15px;
 }
 .profilepic{
 	max-width: 100%;
@@ -19,8 +23,7 @@
 .home {
 	min-height: 500px; 
 }
-.project .skills{
-	
+.project .skills{	
 	padding: 15px;
 }
 
@@ -42,11 +45,24 @@
 	}
 
 }
-@media screen and (max-width: 992px) {
-    .project{
-	
-	}
-}
+
 .align-left{
 	text-align: left;
 }
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+@font-face {
+  font-family: "Kimberley";
+  src: url(./fonts/MYRIADPRO-BOLD.OTF) format("truetype");
+}
+.navbar {
+font-size: 16px;
+ font-family: "Kimberley", sans-serif; } 
+@font-face {
+  font-family: "Kimberle";
+  src: url(./fonts/SkarpaLt.ttf) format("truetype");
+}
+{
+font-size: 16px;
+ font-family: "Kimberle", sans-serif; }

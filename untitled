@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ashish Surana</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.1.1/css/zocial.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		 
+    	$("#home2, #home1").click(function(){
+       		$(".project, .resume, .contact").hide();
+       		$('.nav.navbar-nav > li').removeClass('active');
+        	$(".home").show();
+        	$("#home2").addClass('active');
+    	});
+    	$(".home, .resume, .contact").hide();
+    	$("#project").click(function(){
+        	$(".home, .resume, .contact").hide();
+        	$(".project").show();
+    	});
+
+    	$("#resume").click(function(){
+       		$(".project, .contact, .home").hide();
+        	$(".resume").show();
+        	$(".resume").addClass('active');
+    	});
+    	$("#contact").click(function(){
+       		$(".project, .resume, .home").hide();
+        	$(".contact").show();
+    	});
+		$('.nav.navbar-nav > li').hover(function(){
+        $('.nav.navbar-nav > li').removeClass('active');
+        $(this).addClass('active');}, function(){
+        	$(this).removeClass('active');
+   		});
+	});
+  </script>
+</head>
+<body>
+
+
+<nav class = "navbar navbar-default" role = "navigation">
+   
+   <div class = "navbar-header">
+      <button type = "button" class = "navbar-toggle" 
+         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+         <span class = "sr-only"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+		
+      <a class = "navbar-brand" href = "#" id="home1">Ashish Surana</a>
+   </div>
+   
+   <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+	
+      <ul class = "nav navbar-nav">
+        <li class="active"><a href="#" id="home2">About</a></li>
+        <li><a href="#" id="project">Projects</a></li>
+        <li><a href="#" id="resume">Resume</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
+      </ul>
+   </div>
+</nav>
+
+
+<div class="container">
+	<div class="home">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content " >
+				<img src="./assets/pic.jpg" class="profilepic img-thumbnail">
+			</div>	
+
+			<div class="col-md-5 col-sm-8  col-xs-12 content" x>
+				<p>I'm  a 3rd year Computer Science Engineering Student from Arya College of Enggineering & IT. The thirst of Exploring things and curiosity well defines me. I'm a traveling and Photography addict.
+
+				Being a Dreamer, and geek student who loves learning new technologies I love to think on innovative creative ideas and their deployment. I'm a RedHat Certified Engineer, RedHat Certified System Administrator, Firefox Student Ambassador, Open Source Enthusiast and believes in open learning. During the college time, I came in contact with the open source communities like Mozilla Community Rajasthan, OpenMoz, etc. I'm an active member of these communities and delivered several tech talks and Workshops.</p>
+			</div>	
+		</div>
+	</div>
+
+
+	<div class="project">
+		<h3 class="align-left">Projects</h3>
+		<hr>
+		<div class="row">
+			<div class="col-lg-3  col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2    project-pic">
+				<h4> Medicine Management</h4>
+				<img src="./assets/med.png" class="img-responsive img-thumbnail">
+							
+			</div>
+			<div class="col-lg-3  col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2  project-pic">
+				<h4>Quick Mini-Statement</h4>
+				<img src="./assets/mini.png" class="img-responsive img-thumbnail">
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-github fa-stack-1x"></i>
+					</a>
+				</span>
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-picture-o fa-stack-1x"></i>
+					</a>
+				</span>	
+
+				<a href="https://www.facebook.com/ashish.surana1" class="more" target="_blank">
+	  					<i class="fa fa-chevron-up fa-stack-2x more"></i>
+				</a>			
+			</div>
+			<div class="col-lg-3   col-md-3  col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 project-pic">
+				<h4>Payroll Management</h4>
+				<img src="./assets/payroll.png" class="img-responsive img-thumbnail">
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-github fa-stack-1x"></i>
+					</a>
+				</span>
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-picture-o fa-stack-1x"></i>
+					</a>
+				</span>	
+				<a href="https://www.facebook.com/ashish.surana1" class="more" target="_blank">
+	  					<i class="fa fa-chevron-up fa-stack-2x more"></i>
+				</a>			
+			</div>
+			<div class="col-lg-3   col-md-3 c col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 project-pic">
+				<h4>www.epilepsycare.in </h4>
+
+				<img src="./assets/epilepsy.png" class="img-responsive img-thumbnail">
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-github fa-stack-1x"></i>
+					</a>
+				</span>
+				<span class="fa-stack fa-lg" >
+					<a href="https://www.facebook.com/ashish.surana1" target="_blank">
+	  					<i class="fa fa-picture-o fa-stack-1x"></i>
+					</a>
+				</span>				
+
+				<a href="https://www.facebook.com/ashish.surana1" class="more" target="_blank">
+	  					<i class="fa fa-chevron-up fa-stack-2x more"></i>
+				</a>			
+
+
+			</div>
+		</div>
+	</div>
+	<div class="resume">
+		<p>inside resume</p>
+	</div>
+	<div class="contact">
+		<p>inside contact</p>
+	</div>
+</div>
+</body>
+</html>
