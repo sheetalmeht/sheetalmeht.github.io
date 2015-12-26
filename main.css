@@ -6,10 +6,7 @@
 h3 ,h4,  li, .navbar {
 	letter-spacing: 2px;
 }
-p{
-	letter-spacing: 1px;
-	font-size: 15px;
-}
+
 .profilepic{
 	max-width: 100%;
 	display:block;
@@ -43,26 +40,35 @@ p{
 	.home{
 		padding: 0px 5px 0px 5px; 
 	}
-
 }
 
 .align-left{
 	text-align: left;
 }
-p {
-    font-family: "Times New Roman", Times, serif;
-}
+
 @font-face {
   font-family: "Kimberley";
   src: url(./fonts/MYRIADPRO-BOLD.OTF) format("truetype");
 }
+
 .navbar {
 font-size: 16px;
  font-family: "Kimberley", sans-serif; } 
 @font-face {
   font-family: "Kimberle";
-  src: url(./fonts/SkarpaLt.ttf) format("truetype");
+  src: url(./fonts/Md_Gothic11.ttf) format("truetype");
 }
-{
-font-size: 16px;
- font-family: "Kimberle", sans-serif; }
+.heading{
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-family: "Kimberle",serif; 
+}
+@font-face {
+	font-family:  "ubuntu";
+	src : url(./fonts/DroidSans.ttf) ;
+}
+p{
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-family: "ubuntu" ;
+}
