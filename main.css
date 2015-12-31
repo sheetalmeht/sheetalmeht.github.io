@@ -23,7 +23,9 @@ h3 ,h4,  li, .navbar {
 .project .skills{	
 	padding: 15px;
 }
-
+.content {
+	text-align: justify;
+}
 @media screen and (min-width: 768px) {
     .content{
 		margin-top: 100px;
