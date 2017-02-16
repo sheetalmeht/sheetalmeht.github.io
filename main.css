@@ -74,3 +74,10 @@ p{
 	font-size: 15px;
 	font-family: "ubuntu" ;
 }
+
+.mainColor{
+	color: rgb(227,0,22);
+}
+.solidColor{
+	color: rgb(157,16,18);
+}
